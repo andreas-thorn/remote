@@ -1,0 +1,19 @@
+{
+  "name": "remote",
+  "productName": "Remote",
+  "version": "0.0.1",
+  "author": "Andreas Larsson <andla913@gmail.com>",
+  "license": "MIT",
+  "description": "Very simple remote for TVs running JointSpace API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build",
+    "pack": "build --dir",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds"
+  },
+  "devDependencies": {
+    "electron": "^6.0.11",
+    "electron-packager": "^14.0.6"
+  }
+}
